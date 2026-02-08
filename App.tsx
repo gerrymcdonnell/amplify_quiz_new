@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, ReactElement } from "react";
 import {
   Button,
   View,
@@ -127,7 +127,7 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ username }) => {
     }
   };
 
-  const renderContent = (): JSX.Element => {
+  const renderContent = (): ReactElement => {
     switch (gameState) {
       case "idle":
         return (
